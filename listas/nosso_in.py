@@ -4,11 +4,15 @@ def nosso_in(elemento, lista):
             return True
     return False
 
-alunos=[]
-aluno="oi"
-while aluno != "":
-    aluno= input()
-    alunos.append(aluno)    
+def le_lista():
+    lista=[]
+    elem="oi"
+    while elem != "":
+        elem= input()
+        lista.append(elem)   
+    return lista
+
+alunos = le_lista()
 aln_hj=input("digite o nome do aluno: ")
 if nosso_in(aln_hj,alunos):
     print(aln_hj, "veio.")
